@@ -3,3 +3,6 @@
 //
 
 #include "Product.h"
+bool Product::IsValid() {
+        return price > 0;
+    }

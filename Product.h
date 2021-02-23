@@ -6,11 +6,11 @@
 #define SE_LABA_1_PRODUCT_H
 
 
-
 class Product {
-
+public:
+    int price;
+    bool IsValid();
 };
-
 
 
 #endif //SE_LABA_1_PRODUCT_H

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.17)
+project(SE_laba_1)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(SE_laba_1
+        main.cpp Product.h Product.cpp)
