@@ -7,17 +7,17 @@
 
 
 class SmtpMailer {
-private:
-    Logger* logger;
-public:
-    SmtpMailer()
-    {
-        logger = new Logger();
-    }
-    void SendMessage(string message)
-    {
-        // отправка сообщения
-    }
+//private:
+//    Logger* logger;
+//public:
+//    SmtpMailer()
+//    {
+//        logger = new Logger();
+//    }
+//    void SendMessage(string message)
+//    {
+//        // отправка сообщения
+//    }
 };
 
 

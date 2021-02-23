@@ -9,7 +9,7 @@
 class Product {
 public:
     int price;
-    bool IsValid();
+
 };
 
 
