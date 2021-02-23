@@ -4,4 +4,5 @@ project(SE_laba_1)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(SE_laba_1
-        main.cpp Product.h Product.cpp)
+        main.cpp Product.h Product.cpp ImageHelper.h ImageHelper.cpp
+        SmtpMailer.h SmtpMailer.cpp)
