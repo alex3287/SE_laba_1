@@ -9,9 +9,10 @@
 
 class ProductValidater {
 public:
-    Product *product;
     bool IsCustomerServiceValid(bool isCustomerService);
     bool IsSupplierServiceValid(bool isSupplierService);
+private:
+    Product *product;
 };
 
 
