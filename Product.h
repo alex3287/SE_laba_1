@@ -5,11 +5,15 @@
 #ifndef SE_LABA_1_PRODUCT_H
 #define SE_LABA_1_PRODUCT_H
 
+#include <iostream>
 
 class Product {
 public:
     int price;
-    bool IsValid();
+    Product(std::string n, int p);
+    void getProduct();
+private:
+    std::string name;
 };
 
 

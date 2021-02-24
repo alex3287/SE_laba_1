@@ -3,6 +3,9 @@
 //
 
 #include "Product.h"
-bool Product::IsValid() {
-        return price > 0;
-    }
+
+Product::Product(std::string n, int p): name(n), price(p){}
+void Product::getProduct() {
+    std::cout<<"name: "<<name;
+    std::cout<<"    price: "<<price<<std::endl;
+}
