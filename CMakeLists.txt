@@ -5,4 +5,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(SE_laba_1
         main.cpp Product.h Product.cpp ImageHelper.h ImageHelper.cpp
-        SmtpMailer.h SmtpMailer.cpp CustomerService.h CustomerService.cpp ICustomerService.h)
+
+        SmtpMailer.h SmtpMailer.cpp CustomerService.h CustomerService.cpp ICustomerService.h
+
+
+        Image.cpp Image.h SaveImage.cpp SaveImage.h ISaveImage.h DeleteDuplicatesImage.cpp DeleteDuplicatesImage.h)
+

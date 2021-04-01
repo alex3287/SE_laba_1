@@ -3,11 +3,10 @@
 //
 // 1) К задачи "Валидация данных" относятся классы Product, CustomerService и ICustomerService
 
-
 #include <iostream>
 #include "Product.h"
 #include "CustomerService.h"
-#include "ICustomerService.h"
+
 
 int main(){
 //    тесты на задачу № 1
@@ -21,5 +20,6 @@ int main(){
     std::cout<<C.IsValid(&testCS)<<std::endl; // проверка на валидность в 100000
     std::cout<<B.IsValid()<<std::endl; // проверка на валидность по умолчанию
     std::cout<<D.IsValid()<<std::endl; // проверка на валидность по умолчанию
+
     return 0;
 }

@@ -5,6 +5,7 @@
 #ifndef SE_LABA_1_PRODUCT_H
 #define SE_LABA_1_PRODUCT_H
 
+
 #include "ICustomerService.h"
 
 class Product {
@@ -15,6 +16,7 @@ public:
             return isCustomerService->IsValid(price);
         return price > 0;
     }
+
 
 };
 
