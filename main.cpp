@@ -1,9 +1,11 @@
 //
 // Created by Александр Мангазеев on 23.02.2021.
 //
-// 1) К заданию "Валидация данных" относятся классы: Product, CustomerService и ICustomerService
+// 1) К заданию "Валидация данных" относятся классы в папке task1
 //
-// 2) К заданию "God object" относятся классы: ImageHelper, SaveImage, Image, DeleteDuplicatesImage
+// 2) К заданию "God object" относятся классы в папке task2
+//
+// 3) К заданию "Принципы открытости закрытости" относятся классы в папке task3
 
 #include <iostream>
 #include "task1/Product.h"
@@ -18,6 +20,11 @@
 #include "task2/ResizeImage.h"
 #include "task2/Url.h"
 #include "task2/Account.h"
+
+#include "task3/LoggerDataBase.h"
+#include "task3/LoggerTextFile.h"
+#include "task3/SmtpMailer.h"
+#include "task3/ILogger.h"
 
 
 int main(){
@@ -62,5 +69,17 @@ int main(){
     ChangeSize.Resize(Fig1, 234, 345); // изменения размера
     std::cout<<"----------------------------------------"<<std::endl;
 
+//    тесты на задачу №3
+    std::cout<<"Тестирование задачи №3 (Принцип открытости и закрытости)"<<std::endl;
+
+//    создаем объекты для различных логов
+    ILogger *BD = new LoggerDataBase;
+    ILogger *TF = new LoggerTextFile;
+
+    SmtpMailer Obj(BD);
+    Obj.SendMessage("hello");
+    SmtpMailer Obj2(TF);
+    Obj2.SendMessage("good by");
+    std::cout<<"----------------------------------------"<<std::endl;
     return 0;
 }
