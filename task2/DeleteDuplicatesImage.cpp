@@ -6,6 +6,8 @@
 #include "DeleteDuplicatesImage.h"
 
 int DeleteDuplicatesImage::DeleteDuplicates() {
-    std::cout<<"Удалил 2 дубликата"<<std::endl;
+    // cout тут просто для теста
+    std::cout<<"Дубликаты удалены успешно"<<std::endl;
+//    Для примера возвращаю 2 удаленных
     return 2;
 }

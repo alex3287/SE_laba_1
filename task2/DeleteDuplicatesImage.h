@@ -7,7 +7,8 @@
 
 
 class DeleteDuplicatesImage {
-int DeleteDuplicates();
+public:
+    int DeleteDuplicates();
 };
 
 
